@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {font-family: 'DungGeunMo';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');}
+* {
+    font-family: 'pretendard'; 
+    margin: 0;
+    font-size: 16px;
+  }
+  body {
+    font-size: 16px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    background-color: rgb(255, 255, 255);
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+  .du{
+    font-family: 'DungGeunMo';
+  }
+
+.pre {font-family: 'pretendard';}
+.suit{font-family: ‘SUIT’;}
+.flex{display: flex;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.white{color: #fff;}
+.welloblue{color: rgb(110, 173, 255);}
+.black{color: #000;}
+.non-s{text-shadow: none;}
+.w500{font-weight: 500;}
+.w800{font-weight: 800;}
+.w300{font-weight: 300;}
+.alink{color: #7489ff;}
+.bgwhite{background-color: #fff;}
+
+/*컨테이너*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../src/Quarray.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container2 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.con1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.commandTitle {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #24c37f;
+}
+.commandSubTitle {
+  padding-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #7c7c7c;
+}
+.imgClass {
+  width: 30rem;
+  height: 30rem;
+}
+
+/* 푸터 */
+
+footer{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #7b7b7b;
+}
+.footer h1{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.footer a{
+  color: #7b7b7b;
+}
+.footer{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: #7b7b7b;
+}
+.mfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+footer.li{
+  color: white;
+}
+.footerp{
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+.footerp a{
+  color: #7489ff;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+
+/*버튼 */
+
+button.inviteHeaderBtn {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  button.inviteHeaderBtn:hover {
+    background-color: rgba(126, 126, 126, 0.089);
+  }
+
+/* 헤더 */
+header {
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  color: white;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.headerDiv {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerBtns {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.headerTitleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle {
+  color: #000;
+  font-size: 2em;
+}
+
+
+/* 제목 */
+
+.title {
+  font-size: 10em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 10px;
+  }
+  
+  div.con1 {
+    flex-direction: column;
+  }
+  div.con3 {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    height: 20rem;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .pol {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  div.main {
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 16px;
+  }
+  button.inviteBtn {
+    font-size: 16px;
+  }
+  div.buttons {
+    padding-top: 1.5em;
+  }
+
+  header {
+    overflow: hidden;
+    height: 8em;
+  }
+  .headerTitleContent {
+    font-size: 10px;
+  }
+  .headera {
+    font-size: 10px;
+  }
+  .headerIcon {
+    font-size: 16px;
+  }
+  .headerTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  button.nheaderBtn {
+    display: none;
+  }
+  .headerBtns {
+    gap: 0rem;
+  }
+  button.inviteHeaderBtn {
+    font-size: 16px;
+  }
+
+  .discordtitle {
+    font-size: 15px;
+  }
+  div.con2 {
+    height: 13rem;
+  }
+}
